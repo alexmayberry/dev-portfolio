@@ -1,0 +1,22 @@
+.wrapper {
+    margin: 10px 50px 100px 50px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-between;
+}
+h1 {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+
+}
+
+.bio-icon {
+    font-size: 2em;
+}
