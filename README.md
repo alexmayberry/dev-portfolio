@@ -29,12 +29,13 @@ Do this by using a pseudo class and `order` if possible.
 ## 0.8 Add :hover and other pseudo class functionality
 
 ## 0.9 Add pseudo element functinoality
+- Add "about Alex" tool tip to bio-icon
 
 ## 1.0 - Fully functional and responsive site
 The first version will be made using nested divs and classes to style the elements. I will also css grid and css flexbox to create the layout and control the responsiveness.
 
-## Later Version
-Add pseudo classes to create a filter for projects
-
-## Later version
-I will use `Sass` to create CSS variables which can easily be updated or varied to create dark mode or light mode
+## Features for Later Versions
+- Add pseudo classes to create a filter for projects on the project page
+- Use `Sass` to create CSS variables which can easily be updated or varied to create dark mode or light mode
+- Link site to my github to add things like language graphs to project pages.
+-

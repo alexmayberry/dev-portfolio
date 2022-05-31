@@ -20,3 +20,31 @@ h1 {
 .bio-icon {
     font-size: 2em;
 }
+
+
+/* Project Tiles */
+.project-tile-section {
+    min-height: 50vh;
+    background-color: blueviolet;
+}
+
+.project-tile-container {
+    height: 400px;
+    width: 300px;
+}
+
+.project-tile {
+    background-color: beige;
+    padding: 30% 10% 10% 10% ;
+    border-radius: 15px;
+    padding-top: 60px;
+}
+
+.project-title {
+    font-family: sans-serif;
+}
+
+.project-tools {
+    font-family: monospace;
+    color: red;
+}
