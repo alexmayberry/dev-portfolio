@@ -9,7 +9,7 @@ body {
     background-color: black;
 }
 
-/* Header */
+/* Header  */
 header {
     width: 100%;
     display: flex;
@@ -29,8 +29,11 @@ h1 {
 
 /* Project Tiles */
 .project-tile-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 50px 50px;
     width: 100%;
     max-width: 1200px;
     background-color:cornflowerblue;
@@ -38,8 +41,8 @@ h1 {
 }
 
 .project-tile-container {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    width: 350px;
+    flex: 1 1 1;
     background-color: grey;
 
 }

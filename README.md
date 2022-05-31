@@ -21,6 +21,8 @@ This is my web development portfolio.
 ## 0.5 Link bio-button to bio
 - use `display:` and other means to make the bio in the footer appear whenever the bio-button is clicked
 
+## 0.51 Add Media Queries
+
 ## 0.6 create a template project page that goes into greater detial about the project
 
 ## 0.7 Add a 'next project' or 'other projects' preview section at the bottom of the template project page.
