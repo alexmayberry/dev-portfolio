@@ -38,4 +38,4 @@ The first version will be made using nested divs and classes to style the elemen
 - Add pseudo classes to create a filter for projects on the project page
 - Use `Sass` to create CSS variables which can easily be updated or varied to create dark mode or light mode
 - Link site to my github to add things like language graphs to project pages.
--
+- Give a preview of the project and expand its tile to take up the whole screen on the project page. Then add a more indepth preview of the project and a "read more" button that would take you to the full project page. The other tiles would shift around and when clicked on would grow to do the same expanded preveiw view.
