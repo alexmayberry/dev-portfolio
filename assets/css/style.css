@@ -1,12 +1,6 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2.5% 2.5% 2.5% 2.5% ;
-}
-
 body {
     background-color: rgb(39, 39, 39);
+
 }
 
 /* Some basic element styling */
@@ -41,18 +35,63 @@ ul {
     line-height: 2rem;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5% 2.5% 2.5% calc(300px + 2.5%);
+}
+
+.sidebar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    border-right: 2px solid beige;
+    width: 300px;
+    height: 100%;
+}
+
+/* Bio */
+.bio-box {
+    display: flex;
+    justify-content: start;
+    flex-flow: row wrap;
+    color: beige;
+    line-height: ;
+
+}
+
+.bio-photo {
+    flex: 1 1;
+    max-width: calc(100% - 4rem);
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.bio {
+    flex: 1 1;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
 /* Header  */
 header {
     width: 100%;
+    height: 4rem;
     display: flex;
     flex-flow: row ;
     justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    padding: .5rem;
 }
 
 .bio-icon {
+    position
     font-size: 2em;
     z-index: 2;
 }
+
 
 /* Project Tiles */
 .project-tile-section {
@@ -63,14 +102,20 @@ header {
     gap: 50px 50px;
     width: 100%;
     max-width: 1200px;
-    background-color:rgba(100, 149, 237, 0.2);
-    margin-top: 5%;
+    margin-top: 1rem;
 }
 
+.projects-section-header {
+    align-self: flex-start;
+    margin-top: 5%;
+    color: beige;
+    font-family: monospace;
+    width: 100%;
+    background-color:darkviolet;
+    padding: .5rem;
+}
 .project-tile-container {
     width: 350px;
-    flex: 1 1 1;
-    background-color: grey;
 
 }
 
@@ -114,34 +159,14 @@ header {
     color: red;
 }
 
-/* Bio */
-.bio-box {
-    display: flex;
-    justify-content: start;
-    flex-flow: row wrap;
-    margin-top:  5rem;
-    color: beige;
-    line-height: ;
-
-}
-
-
-.bio-photo {
-    max-width: 400px;
-    margin: 0rem 2rem 2rem 0rem;
-}
-
-.bio {
-    width: 50%;
-}
-
-
 /* footer */
 footer {
     display: flex;
     justify-content: center;
     width: 100%;
     background-color: blueviolet;
+    padding: .5rem;
+    margin-bottom: 2rem;
 }
 
 .socials {
@@ -154,12 +179,21 @@ footer {
 }
 
 .icon {
-    margin: 1em;
+    margin: 1rem;
     height: 2rem; 
     width: 2rem;
 }
 
+#linkedin-icon {
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
 .icon-parent {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+
 }
