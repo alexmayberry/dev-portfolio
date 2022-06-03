@@ -33,6 +33,7 @@ h3 {
 
 p {
     font-size: 1.5rem;
+    line-height: 1.7rem;
 }
 
 ul {
@@ -109,33 +110,56 @@ header {
 
 
 .project-tools {
-
     font-family: monospace;
     color: red;
 }
 
-/* footer */
-footer {
-    margin-top: 5rem;
+/* Bio */
+.bio-box {
+    display: flex;
+    justify-content: start;
+    flex-flow: row wrap;
+    margin-top:  5rem;
+    color: beige;
+    line-height: ;
+
 }
 
-footer > div {
-    color: beige;
-    font-family: sans-serif;
-    list-style: none;
-    }
 
-footer > h2 {
-    margin: 2rem 0rem 1rem;
+.bio-photo {
+    max-width: 400px;
+    margin: 0rem 2rem 2rem 0rem;
+}
+
+.bio {
+    width: 50%;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: blueviolet;
 }
 
 .socials {
+    flex: 1 1 1fr;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
-.socials .icon {
-    margin: .5rem;
+.icon {
+    margin: 1em;
     height: 2rem; 
     width: 2rem;
+}
+
+.icon-parent {
+    display: flex;
+    align-items: center;
 }

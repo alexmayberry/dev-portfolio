@@ -18,8 +18,8 @@ This is my [LIVE](https://alexmayberry.github.io/dev-portfolio/) web development
 ## 0.4 Create footer (aka bio)
 - create a responsive layout for it using css grid
 
-## 0.5 Link bio-button to bio
-- use `display:` and other means to make the bio in the footer appear whenever the bio-button is clicked
+## 0.5 Add static full height, third width element
+- Add statitic left third full height element on desktop view that would show the bio/footer section for the home screen, and projects gallery when the user is viewing a project. It would also be the full width bio page and project gallery page for mobile
 
 ## 0.51 Add Media Queries
 
@@ -41,3 +41,5 @@ The first version will be made using nested divs and classes to style the elemen
 - Use `Sass` to create CSS variables which can easily be updated or varied to create dark mode or light mode
 - Link site to my github to add things like language graphs to project pages.
 - Give a preview of the project and expand its tile to take up the whole screen on the project page. Then add a more indepth preview of the project and a "read more" button that would take you to the full project page. The other tiles would shift around and when clicked on would grow to do the same expanded preveiw view.
+- Add a "subscribe for future content" form to my bio and learn how to save that data.
+- Add
