@@ -6,7 +6,38 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(39, 39, 39);
+}
+
+/* Some basic element styling */
+a {
+    color: aqua;
+
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: beige;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 1rem 0rem .75rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+ul {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 /* Header  */
@@ -16,16 +47,11 @@ header {
     flex-flow: row ;
     justify-content: space-between;
 }
-h1 {
-    font-family: sans-serif;
-    color: beige;
-
-}
 
 .bio-icon {
     font-size: 2em;
+    z-index: 2;
 }
-
 
 /* Project Tiles */
 .project-tile-section {
@@ -36,7 +62,7 @@ h1 {
     gap: 50px 50px;
     width: 100%;
     max-width: 1200px;
-    background-color:cornflowerblue;
+    background-color:rgba(100, 149, 237, 0.2);
     margin-top: 5%;
 }
 
@@ -81,13 +107,35 @@ h1 {
     color:darkslateblue;
 }
 
-.project-type {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
 
 .project-tools {
 
     font-family: monospace;
     color: red;
+}
+
+/* footer */
+footer {
+    margin-top: 5rem;
+}
+
+footer > div {
+    color: beige;
+    font-family: sans-serif;
+    list-style: none;
+    }
+
+footer > h2 {
+    margin: 2rem 0rem 1rem;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socials .icon {
+    margin: .5rem;
+    height: 2rem; 
+    width: 2rem;
 }
