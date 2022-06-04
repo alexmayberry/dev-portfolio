@@ -39,7 +39,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2.5% 2.5% 2.5% calc(300px + 2.5%);
+    margin: 2.5% 2.5% 2.5% calc(400px + 2.5%);
 }
 
 .sidebar {
@@ -48,7 +48,7 @@ ul {
     flex-direction: column;
     position: fixed;
     border-right: 2px solid beige;
-    width: 300px;
+    width: 400px;
     height: 100%;
 }
 
@@ -58,18 +58,15 @@ ul {
     justify-content: start;
     flex-flow: row wrap;
     color: beige;
-    line-height: ;
-
 }
 
 .bio-photo {
-    flex: 1 1;
-    max-width: calc(100% - 4rem);
+    justify-self: center;
+    width: calc(100% - 8rem);
     margin: 0rem 1rem 0rem 1rem;
 }
 
 .bio {
-    flex: 1 1;
     padding: 1rem;
     font-size: 1.25rem;
 }
@@ -86,8 +83,11 @@ header {
     padding: .5rem;
 }
 
+header > h2 {
+    color: beige;
+}
+
 .bio-icon {
-    position
     font-size: 2em;
     z-index: 2;
 }
@@ -196,4 +196,39 @@ footer {
     justify-content: space-around;
     align-self: flex-end;
 
+}
+
+
+/* Here be Media Queries */
+
+@media screen and (min-width: 400px) {
+    .sidebar {
+        display: none;
+    }
+
+    .wrapper {
+        margin: 2.5%;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .sidebar {
+        display: block;
+        width: 300px;
+    }
+
+    .wrapper {
+        margin: 2.5% 2.5% 2.5% calc(300px + 2.5%);
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .sidebar {
+        display: block;
+        width: 400px;
+    }
+
+    .wrapper {
+        margin: 2.5% 2.5% 2.5% calc(400px + 2.5%);
+    }
 }
