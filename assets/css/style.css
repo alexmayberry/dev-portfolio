@@ -9,6 +9,11 @@ a {
 
 }
 
+a:hover {
+    color: rgb(0, 132, 255);
+
+}
+
 h1 {
     font-size: 3rem;
     font-family: sans-serif;
@@ -37,6 +42,12 @@ ul {
 
 .wrapper {
     display: flex;
+
+}
+
+.main {
+    display: flex;
+    
     flex-direction: column;
     align-items: center;
     margin: 2.5% 2.5% 2.5% calc(400px + 2.5%);
@@ -63,7 +74,7 @@ ul {
 .bio-photo {
     justify-self: center;
     width: calc(100% - 8rem);
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 1rem;
 }
 
 .bio {
@@ -94,17 +105,6 @@ header > h2 {
 
 
 /* Project Tiles */
-.project-tile-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-items: center;
-    gap: 50px 50px;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 1rem;
-}
-
 .projects-section-header {
     align-self: flex-start;
     margin-top: 5%;
@@ -114,9 +114,16 @@ header > h2 {
     background-color:darkviolet;
     padding: .5rem;
 }
-.project-tile-container {
-    width: 350px;
 
+.project-tile-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:start;
+    align-items: center;
+    gap: 50px 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 1rem;
 }
 
 .project-tile {
@@ -128,9 +135,10 @@ header > h2 {
 
 .project-tile-image {
     border-radius: 15px 15px 0px 0px ;
-    min-height: 200px;
+    height: 200px;
     width: 100%;
     background-color: brown;
+    overflow: hidden;
 }
 
 .text-background {
@@ -153,10 +161,23 @@ header > h2 {
     color:darkslateblue;
 }
 
+.web-app {
+    color:darkblue;
+}
+
+.game {
+    color:indianred;
+}
 
 .project-tools {
     font-family: monospace;
     color: red;
+}
+
+.backgammon-board {
+    width: 210%;
+    /* object-fit: none;
+    object-position: 29% 7%; */
 }
 
 /* footer */
@@ -175,13 +196,16 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .icon {
     margin: 1rem;
     height: 2rem; 
     width: 2rem;
+}
+
+.footer-link {
+    margin: 1rem;
 }
 
 #linkedin-icon {
@@ -195,40 +219,123 @@ footer {
     align-items: center;
     justify-content: space-around;
     align-self: flex-end;
-
 }
 
 
 /* Here be Media Queries */
 
-@media screen and (min-width: 400px) {
-    .sidebar {
-        display: none;
+@media screen and (min-width: 200px) {
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .wrapper {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        border-right-width: 0px;
+    }
+
+    .bio-box {
+        flex-flow: row wrap;
+        justify-content: center;    
+    }
+
+    .bio-photo {
+        max-width: 40%;
+    }
+
+    .main {
         margin: 2.5%;
+    }
+
+    .project-tile-container {
+        width: 90%;
     }
 }
 
-@media screen and (min-width: 730px) {
-    .sidebar {
-        display: block;
-        width: 300px;
+@media screen and (min-width: 600px) {
+    .project-tile-container {
+        width: 40%;
     }
 
+    .bio-box {
+        justify-content: start;
+        flex-flow: row nowrap; 
+    }
+
+    .bio-photo {
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width: 620px) {
+
+
+}
+
+@media screen and (min-width: 730px) {
     .wrapper {
-        margin: 2.5% 2.5% 2.5% calc(300px + 2.5%);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        border-right-width: 0px;
+    }
+
+    .main {
+        margin: 2.5%;
+    }
+
+    .project-tile-container {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    .project-tile-container {
+        width: 30%;
     }
 }
 
 @media screen and (min-width: 1230px) {
-    .sidebar {
-        display: block;
-        width: 400px;
+    .wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-    .wrapper {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin: 2.5% 2.5% 2.5% calc(400px + 2.5%);
+    }
+    
+    .sidebar {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column nowrap;
+        position: fixed;
+        border-right: 2px solid beige;
+        width: 400px;
+        height: 100%;
+    }
+
+    .bio-box {
+        justify-content: start;
+        flex-flow: row wrap;
+    }
+
+    .bio-photo {
+        max-width: none;
+    }
+
+    .project-tile-container {
+        width: 40%;
     }
 }
