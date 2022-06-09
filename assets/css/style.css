@@ -133,6 +133,10 @@ header > h2 {
     border-radius: 15px;
 }
 
+.project-tile-container {
+    flex-grow: 1;
+}
+
 .project-tile-image {
     border-radius: 15px 15px 0px 0px ;
     height: 200px;
@@ -332,10 +336,11 @@ footer {
     }
 
     .bio-photo {
-        max-width: none;
+        max-width: 40%;
     }
 
     .project-tile-container {
-        width: 40%;
+        width: 30%;
+        max-width: 30%;
     }
 }
