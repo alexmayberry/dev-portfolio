@@ -137,6 +137,11 @@ header > h2 {
     flex-grow: 1;
 }
 
+.project-tile-container:hover {
+    width: 100%;
+    opacity: .7;
+}
+
 .project-tile-image {
     border-radius: 15px 15px 0px 0px ;
     height: 200px;
@@ -294,10 +299,6 @@ footer {
 
     .main {
         margin: 2.5%;
-    }
-
-    .project-tile-container {
-        width: 40%;
     }
 }
 
